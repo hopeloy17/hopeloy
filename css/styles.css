@@ -17,19 +17,79 @@ html {
     scroll-behavior: smooth;
 }
 
-p {
-    color: rgb(85. 85, 85);
+.portfolio-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    /* grid-template-rows: repeat(1, 200px); */
+    grid-template-rows: repeat(2, 200px);
+    margin: 10%;
+    gap: 10px;
+    background-image: url();
 }
 
-/* TRANSITION */
-
-a,
-.btn {
-    transition: all 300ms ease;
+.grid-item_intro-square {
+    border: 1px solid green;
 }
 
-/* DESKTOP NAV */
+.grid-item_projects-square {
+    border: 1px solid green;
+}
 
-nav, .nav-links {
+.grid-item_about-square {
+    border: 1px solid green;
+}
+
+.grid-item_skills-square {
+    border: 1px solid green;
+}
+
+.grid-item_contact-square {
+    border: 1px solid green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .nav-bar {
+    border: 2px solid green;
+    width: 70%;
+    gap: 15px;
+    margin-left: 15%;
+}
+
+.nav-bar .navigate {
     display: flex;
-}
+    gap: 15px;
+} */
