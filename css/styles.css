@@ -19,6 +19,7 @@ body {
 
 html, body {
     height: 100%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -49,14 +50,15 @@ html, body {
 .portfolio-grid-container {
     display: grid;
     grid-template-columns: 1fr; /* Default: 1 column for small screens */
-    grid-template-rows: 250px 250px 250px 250px 250px; /* Rows adjust to content */
+    grid-template-rows: auto; /* Rows adjust to content */
     gap: 10px;
-    margin: 5%;
-    padding: 20px; /* Adjust padding for smaller screens */
-    background-image: url(https://picsum.photos/id/175/700/500);
-    background-size: cover;
+    margin: 0;
+    padding: 10px; /* Adjust padding for smaller screens */
+    /* background-image: url(https://picsum.photos/id/449/300/800); */
+    background-image: url(https://images.squarespace-cdn.com/content/v1/61eb9c914d95a9053b4ac4aa/26e061c6-bef2-44a7-a4d0-777acb1da28f/IMG_2499.jpg);
+    background-size:cover;
     background-position: center;
-    border-radius: 5px;
+    border-radius: 0;
     animation: fadeIn 1.5s ease-out forwards;
 }
 
@@ -66,11 +68,12 @@ html, body {
 .grid-item_about-square,
 .grid-item_skills-square,
 .grid-item_contact-square {
-    background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
-    border: 1px solid #ddd; /* Light gray border */
+        /* White background with slight transparency */
+    background-color: rgba(255, 255, 255, 0.6);
     padding: 20px;
     text-align: center;
-    min-height: 150px; /* Ensure they have some height even if content is minimal */
+        /* Ensure they have some height even if content is minimal */
+    min-height: 150px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,23 +88,58 @@ html, body {
 
 .grid-item_intro-square {
     border: 1px solid #f7f9f7;
-    animation: fadeInto 1.2s ease-out forwards;
+    animation: fadeInto 1s ease-out forwards;
+    min-height: 100vh;
+    /* grid-column: 1/-1; */
+    position: relative;
+}
+.grid-item_intro-square::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    /* background-color: rgba(0, 0, 0, 0.3); Semi-transparent overlay for text readability */
+    z-index: 1;
+}
+.grid-item_intro-square > * { /* Target direct children of intro-square to put them above overlay */
+    position: relative;
+    z-index: 2;
 }
 
-/*
+.scroll-down-btn {
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #007bff; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+.scroll-down-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+
 .grid-item_projects-square {
     border: 1px solid #f7f9f7;
+    animation: fadeInto2 1s ease-out forwards;
 }
 
 .grid-item_about-square {
     border: 1px solid #fefffe;
+    animation: fadeInto3 1s ease-out forwards;
 }
 
 .grid-item_skills-square {
     border: 1px solid #fbfffb;
+    animation: fadeInto4 1s ease-out forwards;
 }
 
 .grid-item_contact-square {
     border: 1px solid #fefffe;
-    gr
-} */
+    animation: fadeInto5 1s ease-out forwards;
+}

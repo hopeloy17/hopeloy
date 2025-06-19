@@ -5,6 +5,16 @@
         grid-template-rows: repeat(auto-fit, minmax(200px, 1fr)); /* Rows can adjust, min height */
         padding: 30px; /* Slightly more padding */
     }
+
+    .grid-item_intro-square {
+        min-height: auto;
+        grid-column: 1 / -1; /* Span from the first column line to the last */
+     /* Give it more height if it's a hero section */
+        font-size: 1.5em;
+    }
+    .grid-item_skills-square {
+        animation: fadeInto4b 1s ease-out forwards;
+    }
 }
 
 /* --- LARGE SCREENS (DESKTOP AND UP) --- */
@@ -19,12 +29,27 @@
 
     /* Example: Make the intro square span all columns on desktop */
     .grid-item_intro-square {
+        min-height: auto;
         grid-column: 1 / -1; /* Span from the first column line to the last */
      /* Give it more height if it's a hero section */
         font-size: 1.5em;
-        animation: fadeInto 1.2s ease-out forwards;
+        animation: fadeIntoA 1.5s ease-out forwards;
     }
+    .scroll-down-btn {
+        display: none;
+    }
+
+    .grid-item_about-square {
+        animation: fadeInto3b 1s ease-out forwards;
+    }
+
     .grid-item_contact-square {
-        grid-column: 2/2;
+        grid-column: 2/-2;
+    border: 1px solid #fefffe;
+    animation: fadeInto5b 1s ease-out forwards;
+}
+
+    .grid-item_skills-square {
+        animation: fadeInto4b 1s ease-out forwards;
     }
 }
