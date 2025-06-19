@@ -1,0 +1,30 @@
+/* --- MEDIUM SCREENS (TABLET AND UP) --- */
+@media (min-width: 768px) {
+    .portfolio-grid-container {
+        grid-template-columns: 1fr 1fr; /* Now 2 columns */
+        grid-template-rows: repeat(auto-fit, minmax(200px, 1fr)); /* Rows can adjust, min height */
+        padding: 30px; /* Slightly more padding */
+    }
+}
+
+/* --- LARGE SCREENS (DESKTOP AND UP) --- */
+@media (min-width: 1024px) { /* Or 992px, 1200px, etc. */
+    .portfolio-grid-container {
+        grid-template-columns: 1fr 1fr 1fr; /* Back to 3 columns */
+        grid-template-rows: repeat(3, 350px); /* Specific row heights for desktop */
+        margin: 5% auto; /* Center the grid container horizontally on large screens */
+        max-width: 1200px; /* Prevent it from getting too wide */
+        padding: 50px 25px 25px 25px; /* Original padding */
+    }
+
+    /* Example: Make the intro square span all columns on desktop */
+    .grid-item_intro-square {
+        grid-column: 1 / -1; /* Span from the first column line to the last */
+     /* Give it more height if it's a hero section */
+        font-size: 1.5em;
+        animation: fadeInto 1.2s ease-out forwards;
+    }
+    .grid-item_contact-square {
+        grid-column: 2/2;
+    }
+}

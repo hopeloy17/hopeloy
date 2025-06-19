@@ -1,0 +1,20 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;           /* Start completely transparent */
+        transform: translateY(20px); /* Optional: Start slightly below its final position for a "slide up" effect */
+    }
+    to {
+        opacity: 1;           /* End fully visible */
+        transform: translateY(0);    /* End at its natural position */
+    }
+}
+@keyframes fadeInto {
+    from {
+        opacity: 0;           /* Start completely transparent */
+        transform: translateX(20px); /* Optional: Start slightly below its final position for a "slide up" effect */
+    }
+    to {
+        opacity: 1;           /* End fully visible */
+        transform: translateX(0);    /* End at its natural position */
+    }
+}
