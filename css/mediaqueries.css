@@ -54,7 +54,8 @@
         animation: fadeInto4b 1s ease-out forwards;
     }
 
-    #Email .alt-email {
+        /* I don't know why i did all these  */
+    /* #Email .alt-email {
         display: none;
         transition: 0.5s ease;
     }
@@ -70,5 +71,6 @@
     #Email:hover .alt-email {
         display: inline;
         transition: 0.5s ease;
-    }
+    } */
+
 }

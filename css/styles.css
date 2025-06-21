@@ -147,9 +147,14 @@ html, body {
 .grid-item_contact-square {
     border: 1px solid #fefffe;
     animation: fadeInto5 1s ease-out forwards;
+    
+}
+.grid-item_contact-square .email, .grid-item_contact-square .tel {
+    text-decoration: none;
+    color: #000;
 }
 
-td {
+#skillz td {
     border: 1px solid #007bff; /* Use a consistent blue */
     box-shadow: 0 1px 4px rgba(0, 123, 255, 0.15); /* Softer shadow */
     padding: 8px 12px;
@@ -158,10 +163,6 @@ td {
     /* Smooth transition for box-shadow changes on hover */
     transition: box-shadow 0.2s;
 }
-td:hover {
+#skillz td:hover {
     box-shadow: 0 4px 12px rgba(0, 123, 255, 0.25);
-}
-
-.email {
-    display: none;
 }
