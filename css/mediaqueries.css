@@ -46,11 +46,29 @@
 
     .grid-item_contact-square {
         grid-column: 2/-2;
-    border: 1px solid #fefffe;
-    animation: fadeInto5b 1s ease-out forwards;
-}
+        border: 1px solid #fefffe;
+        animation: fadeInto5b 1s ease-out forwards;
+    }
 
     .grid-item_skills-square {
         animation: fadeInto4b 1s ease-out forwards;
+    }
+
+    #Email .alt-email {
+        display: none;
+        transition: 0.5s ease;
+    }
+    #Email:hover {
+        transition: 0.5s ease;
+    }
+
+    #Email:hover .email {
+        display: none;
+        transition: 0.5s ease;
+    }
+
+    #Email:hover .alt-email {
+        display: inline;
+        transition: 0.5s ease;
     }
 }
