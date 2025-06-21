@@ -162,4 +162,6 @@ td:hover {
     box-shadow: 0 4px 12px rgba(0, 123, 255, 0.25);
 }
 
-
+.email {
+    display: none;
+}
