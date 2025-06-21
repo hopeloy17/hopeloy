@@ -21,6 +21,7 @@ html, body {
     height: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    color: #383838;
 }
 
 /*.portfolio-grid-container {
@@ -146,4 +147,35 @@ html, body {
 .grid-item_contact-square {
     border: 1px solid #fefffe;
     animation: fadeInto5 1s ease-out forwards;
+}
+
+td {
+    border: 1px solid #007bff; /* Use a consistent blue */
+    box-shadow: 0 1px 4px rgba(0, 123, 255, 0.15); /* Softer shadow */
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.85);
+    /* Smooth transition for box-shadow changes on hover */
+    transition: box-shadow 0.2s;
+}
+td:hover {
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.25);
+}
+
+#Email .alt-email {
+    display: none;
+    transition: 0.5s ease;
+}
+#Email:hover {
+    transition: 0.5s ease;
+}
+
+#Email:hover .email {
+    display: none;
+    transition: 0.5s ease;
+}
+
+#Email:hover .alt-email {
+    display: inline;
+    transition: 0.5s ease;
 }
