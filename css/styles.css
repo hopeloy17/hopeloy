@@ -118,10 +118,10 @@ html, body {
     text-decoration: none;
     display: inline-block;
 }
-.scroll-down-btn:hover {
+/* .scroll-down-btn:hover {
     background-color: #0056b3;
     transform: translateY(-2px);
-}
+} */
 
 
 .grid-item_projects-square {
