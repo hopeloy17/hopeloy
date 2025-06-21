@@ -90,7 +90,7 @@ html, body {
     border: 1px solid #f7f9f7;
     animation: fadeInto 1s ease-out forwards;
     min-height: 100vh;
-    /* grid-column: 1/-1; */
+    grid-column: 1/-1;
     position: relative;
 }
 .grid-item_intro-square::before {
