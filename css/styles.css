@@ -73,7 +73,7 @@ html, body {
     padding: 20px;
     text-align: center;
         /* Ensure they have some height even if content is minimal */
-    min-height: 200px;
+    min-height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
