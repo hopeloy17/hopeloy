@@ -153,6 +153,9 @@ html, body {
     text-decoration: none;
     color: #000;
 }
+.grid-item_contact-square .email:hover, .grid-item_contact-square .tel:hover {
+    color: #4b5343;
+}
 
 #skillz td {
     border: 1px solid #007bff; /* Use a consistent blue */
