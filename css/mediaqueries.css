@@ -25,7 +25,7 @@
         margin: 5% auto; /* Center the grid container horizontally on large screens */
         max-width: 1200px; /* Prevent it from getting too wide */
         padding: 50px 25px 25px 25px; /* Original padding */
-        border-radius: 2px;
+        border-radius: 3px;
     }
 
     /* Example: Make the intro square span all columns on desktop */
