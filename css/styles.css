@@ -62,6 +62,10 @@ html, body {
     animation: fadeIn 1.5s ease-out forwards;
 }
 
+#profile .prof-pic {
+    border-radius: 100%;
+}
+
 /* Basic styling for grid items to make them visible */
 .grid-item_intro-square,
 .grid-item_projects-square,
