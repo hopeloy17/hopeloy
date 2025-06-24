@@ -156,10 +156,14 @@ html, body {
 .grid-item_contact-square .email:hover, .grid-item_contact-square .tel:hover {
     color: #4b5343;
 }
+.grid-item_contact-square a {
+    text-decoration: none;
+    color: #000;
+}
 
 #skillz td {
-    border: 1px solid #007bff; /* Use a consistent blue */
-    box-shadow: 0 1px 4px rgba(0, 123, 255, 0.15); /* Softer shadow */
+    border: 1px solid rgba(62, 112, 73); /* Use a consistent blue */
+    box-shadow: 0 1px 4px rgba(62, 112, 73, 0.15); /* Softer shadow */
     padding: 8px 12px;
     border-radius: 4px;
     background-color: rgba(255,255,255,0.85);
@@ -167,5 +171,20 @@ html, body {
     transition: box-shadow 0.2s;
 }
 #skillz td:hover {
-    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.25);
+    box-shadow: 0 4px 12px rgba(62, 112, 73, 0.25);
+}
+
+footer {
+    font-size: 20px;
+    color: #2c2c2c;
+    text-align: center;
+    padding: 0 0 10px 0;
+    
+}
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+#div-stroke {
+    color: #d2f5d2;
 }
