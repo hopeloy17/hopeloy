@@ -55,8 +55,9 @@ html, body {
     gap: 10px;
     margin: 0;
     padding: 10px; /* Adjust padding for smaller screens */
-    /* background-image: url(https://picsum.photos/id/449/300/800); */
-    background-image: url(https://images.squarespace-cdn.com/content/v1/61eb9c914d95a9053b4ac4aa/26e061c6-bef2-44a7-a4d0-777acb1da28f/IMG_2499.jpg);
+    background-image: url(/images/back10.jpg);
+    /* background-image: url(https://images.squarespace-cdn.com/content/v1/61eb9c914d95a9053b4ac4aa/26e061c6-bef2-44a7-a4d0-777acb1da28f/IMG_2499.jpg); */
+    background-color: rgba(0, 0, 0, 0.8);
     background-size:cover;
     background-position: center;
     border-radius: 0;
@@ -137,6 +138,7 @@ html, body {
 .grid-item_about-square {
     border: 1px solid #fefffe;
     animation: fadeInto3 1s ease-out forwards;
+    color: #182018;
 }
 
 .grid-item_skills-square {
