@@ -7,30 +7,20 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/keyframes.css">
     <link rel="stylesheet" href="css/mediaqueries.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/P1.css">
+    
     <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
     <link rel="shortcut icon" href="images/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
     <link rel="manifest" href="images/site.webmanifest" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--for social icons -->
 </head>
 <body>
-    <!-- <div class="container"> -->
-        <!-- <div class="nav-bar">
-            <header class="title">Hope Eloy</header>
-
-            <nav class="navigate">
-                <p><a href="#about">About</a></p>
-                <p><a href="#experience">Experience</a></p>
-                <p><a href="#projects">Projects</a></p>
-                <p><a href="#contact">Contact</a></p>
-            </nav>
-        </div> -->
-
         <div class="portfolio-grid-container">
                 <div class="grid-item_intro-square" id="intro-section">
                     <div id="profile">
-                        <img src="/images/profile.jpg" class="prof-pic alt="my profile" >
+                        <img src="/images/profile.jpg" class="prof-pic" alt="my profile" >
                     </div>
                     <h1>Hope Eloy</h1>
                     <p>Future Full-Stack Developer</p>
@@ -38,7 +28,29 @@
                         View My Projects <!--&darr;-->
                     </button>
                 </div>
-                <div class="grid-item_projects-square" id="projects-section">Projects Content</div>
+                <div class="grid-item_projects-square" id="projects-section">
+                    <div class="proj1">
+                        <div style="width: 85%; min-height: 110px;">
+                            <button type="button" id="openP1modal">
+                                <img src="images/formPng.png" alt="Link to a project" >
+                            </button>
+                            <!-- <a href="https://github.com/hopeloy17/StylishForm" target="_blank" id="openP1modal">
+                                <img src="images/formPng.png" alt="">
+                            </a> -->
+                        </div>
+                        <h5>JavaScript Powered Contact form</h5>
+                        <p style="font-size: small;">A simple form with two parts that slide between one another when user decides with a button </p>
+                    </div>
+
+                    <div class="proj2">
+                        <div style="width: 85%; min-height: 110px;">
+                            <a href="" target="_blank">
+                                <img src="images/workInP.png" alt="">
+                            </a>
+                        </div>
+                        <h5>Rock_paper_Scissors</h5>
+                    </div>
+                </div>
                 <div class="grid-item_about-square">
                     <blockquote>
                         Hey there! I'm Hope, a junior Computer Science student and lifelong tech enthusiast. I got into programming through web development back in 2020, and I've been hooked ever since.
@@ -82,18 +94,68 @@
                 <div class="grid-item_contact-square">
                     <p>Email: <a href="mailto:hopeloy14@gmail.com" class="email">hopeloy14@gmail.com</a></p>
                     <p>Telephone: <a href="tel:+1-734-596-1148" class="tel">734-596-1148 (USA)</a></p>
-                    <p>&darr; Socialz &darr;</p>
-                        <ul>
-                            <li>
-                                <a href="https://www.linkedin.com/in/hope-eloy-04ba8a278" target="_blank">Linkedin</a>
-                            </li>
-                        </ul>
+                    <div class="social-ico" style="display: flex; ">
+                        <a href="https://www.linkedin.com/in/hope-eloy-04ba8a278" target="_blank">
+                            <i class="fab fa-linkedin-in" id="linkedin" style=""></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-instagram" id="ig"></i>
+                        </a>
+                    </div>
                 </div>
         </div>
+
+        <div class="projOverlay">
+            <div class="form-wrap">
+                <form class="form-cunt" action="">
+                    <div class="form-pg active" id="page1">
+                        <h1>Your details</h1>
+                        <div class="form-grp">
+                            <label for="fullname">Name</label>
+                            <input type="text" id="fullname" name="user_name" placeholder="Full Name" required>
+                        </div>
+
+                        <div class="form-grp">
+                            <label for="userEmail">Email</label>
+                            <input type="text" id="userEmail" name="user_email" placeholder="example@domain.com" required>
+                        </div>
+
+                        <div class="formgrp">
+                            <button type="button" class="next-btn" data-next-page="page2">Next &rarr;</button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-pg" id="page2">
+                        <h1>Your Message</h1>
+                        <div class="form-grp">
+                            <label for="messageSubject">Subject:</label>
+                            <input type="text" id="messageSubject" name="message_subject" placeholder="What's this about?" required>
+                        </div>
+
+                        <div class="form-grp">
+                            <label for="userEmail">Your Message:</label>
+                            <textarea name="user_message" id="userMessage" rows="5" placeholder="Spill..."></textarea>
+                        </div>
+
+                        <div class="formgrp">
+                            <button type="button" class="back-btn" data-prev-page="page2">&larr; Back</button>
+                            <button type="submit" class="sub-btn">Submit</button>
+                        </div>
+                    </div>
+                </form>
+                <button class="modal-close-btn">&times;</button>
+                <footer>
+                    <p>Made with 🧠 by <a href="hopeloy.netlify.app">Hope Eloy</a> <span id="div-stroke">|</span> &copy; 2025</p>
+                </footer>
+            </div>
+        </div>
+
         <footer>
-            <p>Made with 🤯 by <a href="/">Hope Eloy</a> <span id="div-stroke">|</span> &copy; 2025</p>
+            <p>Made with 🧠 by <a href="/">Hope Eloy</a> <span id="div-stroke">|</span> &copy; 2025</p>
+            <a href="https://www.flaticon.com/free-icons/under-construction" title="under construction icons">Project icons created by Freepik - Flaticon</a>
         </footer>
 
-    <!-- </div> -->
+    <script src="js/script.js"></script>
+    <script src="js/scriptP1.js"></script>
 </body>
 </html>

@@ -69,8 +69,6 @@ html, body {
 }
 
 /* Basic styling for grid items to make them visible */
-.grid-item_intro-square,
-.grid-item_projects-square,
 .grid-item_about-square,
 .grid-item_skills-square,
 .grid-item_contact-square {
@@ -93,11 +91,24 @@ html, body {
 
 
 .grid-item_intro-square {
-    border: 1px solid #f7f9f7;
+    /* border: 1px solid #f7f9f7; */
     animation: fadeInto 1s ease-out forwards;
     min-height: 100vh;
     grid-column: 1/-1;
     position: relative;
+    background-color: rgba(75, 75, 75, 0.459);
+    padding: 20px;
+    text-align: center;
+        /* Ensure they have some height even if content is minimal */
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #ecffec;
+    opacity: 0.1;
 }
 .grid-item_intro-square::before {
     content: '';
@@ -131,9 +142,37 @@ html, body {
 
 
 .grid-item_projects-square {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Default: 1 column for small screens */
+    grid-template-rows: auto;
     border: 1px solid #f7f9f7;
     animation: fadeInto2 1s ease-out forwards;
+        /* White background with slight transparency */
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    text-align: center;
+        /* Ensure they have some height even if content is minimal */
+    min-height: 200px;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+    gap: 2%;
 }
+
+.proj1, .proj2 {
+    /* border: 1px solid green; */
+    min-height: 80%;
+    background-color: rgba(119, 156, 135, 0.6);
+    border-radius: 1%;
+    justify-content: center;
+    place-items: center;
+}
+.proj1:hover, .proj2:hover {
+    animation: brrr 0.9s ease-in-out;
+}
+
 
 .grid-item_about-square {
     border: 1px solid #fefffe;
@@ -150,17 +189,26 @@ html, body {
     border: 1px solid #fefffe;
     animation: fadeInto5 1s ease-out forwards;
     
-}
-.grid-item_contact-square .email, .grid-item_contact-square .tel {
+}.grid-item_contact-square .email, .grid-item_contact-square .tel {
     text-decoration: none;
     color: #000;
-}
-.grid-item_contact-square .email:hover, .grid-item_contact-square .tel:hover {
+}.grid-item_contact-square .email:hover, .grid-item_contact-square .tel:hover {
     color: #4b5343;
-}
-.grid-item_contact-square a {
+}.grid-item_contact-square a {
     text-decoration: none;
     color: #000;
+}
+.grid-item_contact-square .social-ico {
+    gap: 50%;
+}.social-ico #linkedin {
+    animation: float 4s ease-in-out infinite;
+    height: 50%;
+}.social-ico #ig {
+    animation: float2 4s ease-in-out infinite;
+}.social-ico a {
+  color: #ffffff;
+  font-size: 24px;
+  transition: transform 0.3s ease;
 }
 
 #skillz td {

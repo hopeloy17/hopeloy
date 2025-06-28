@@ -1,7 +1,7 @@
 @keyframes fadeIn {
     from {
         opacity: 0;           /* Start completely transparent */
-        transform: translateY(20px); /* Optional: Start slightly below its final position for a "slide up" effect */
+        transform: translateY(50%); /* Optional: Start slightly below its final position for a "slide up" effect */
     }
     to {
         opacity: 1;           /* End fully visible */
@@ -11,17 +11,16 @@
 @keyframes fadeInto {
     from {
         opacity: 0;           /* Start completely transparent */
-        transform: translateY(20px); /* Optional: Start slightly below its final position for a "slide up" effect */
+        transform: translateY(50%); /* Optional: Start slightly below its final position for a "slide up" effect */
     }
     to {
         opacity: 1;           /* End fully visible */
         transform: translateY(0);    /* End at its natural position */
     }
-}
-@keyframes fadeIntoA {
+}@keyframes fadeIntoA {
     from {
         opacity: 0;           /* Start completely transparent */
-        transform: translateY(-20px); /* Optional: Start slightly above its final position for a "slide up" effect */
+        transform: translateY(-50%); /* Optional: Start slightly above its final position for a "slide up" effect */
     }
     to {
         opacity: 1;           /* End fully visible */
@@ -32,7 +31,7 @@
 @keyframes fadeInto2 {
     from {
         opacity: 0;           /* Start completely transparent */
-        transform: translateX(-20px); /* Optional: Start slightly left its final position for a "slide up" effect */
+        transform: translateX(-50%); /* Optional: Start slightly left its final position for a "slide up" effect */
     }
     to {
         opacity: 1;           /* End fully visible */
@@ -43,17 +42,16 @@
 @keyframes fadeInto3 {
     from {
         opacity: 0;           /* Start completely transparent */
-        transform: translateX(20px); /* Optional: Start slightly to the right of its final position for a "slide up" effect */
+        transform: translateX(50%); /* Optional: Start slightly to the right of its final position for a "slide up" effect */
     }
     to {
         opacity: 1;           /* End fully visible */
         transform: translateX(0);    /* End at its natural position */
     }
-}
-@keyframes fadeInto3b {
+}@keyframes fadeInto3b {
     from {
         opacity: 0;           /* Start completely transparent */
-        transform: translateY(20px); /* Optional: Start slightly below its final position for a "slide up" effect */
+        transform: translateY(50%); /* Optional: Start slightly below its final position for a "slide up" effect */
     }
     to {
         opacity: 1;           /* End fully visible */
@@ -64,17 +62,16 @@
 @keyframes fadeInto4 {
     from {
         opacity: 0;           /* Start completely transparent */
-        transform: translateX(-20px); /* Optional: Start slightly to the left of its final position for a "slide up" effect */
+        transform: translateX(-50%); /* Optional: Start slightly to the left of its final position for a "slide up" effect */
     }
     to {
         opacity: 1;           /* End fully visible */
         transform: translateX(0);    /* End at its natural position */
     }
-}
-@keyframes fadeInto4b {
+}@keyframes fadeInto4b {
     from {
         opacity: 0;           /* Start completely transparent */
-        transform: translateX(20px); /* Optional: Start slightly to the right of its final position for a "slide up" effect */
+        transform: translateX(50%); /* Optional: Start slightly to the right of its final position for a "slide up" effect */
     }
     to {
         opacity: 1;           /* End fully visible */
@@ -85,20 +82,42 @@
 @keyframes fadeInto5 {
     from {
         opacity: 0;           /* Start completely transparent */
-        transform: translateX(20px); /* Optional: Start slightly to the right of its final position for a "slide up" effect */
+        transform: translateX(50%); /* Optional: Start slightly to the right of its final position for a "slide up" effect */
     }
     to {
         opacity: 1;           /* End fully visible */
         transform: translateX(0);    /* End at its natural position */
     }
-}
-@keyframes fadeInto5b {
+}@keyframes fadeInto5b {
     from {
         opacity: 0;           /* Start completely transparent */
-        transform: translateY(20px); /* Optional: Start slightly below its final position for a "slide up" effect */
+        transform: translateY(50%); /* Optional: Start slightly below its final position for a "slide up" effect */
     }
     to {
         opacity: 1;           /* End fully visible */
         transform: translateY(0);    /* End at its natural position */
     }
+}
+
+@keyframes float {
+    0%{transform: translate(0, 0);}
+    25%{transform: translate(2px, -3px);}
+    50%{transform: translate(-2px, 2px);}
+    75%{transform: translate(3px, -1px);}
+    100%{transform: translate(0,0);}
+}@keyframes float2 {
+    0%{transform: translate(0, 0);}
+    25%{transform: translate(-2px, 3px);}
+    50%{transform: translate(2px, -2px);}
+    75%{transform: translate(-3px, 1px);}
+    100%{transform: translate(0,0);}
+}
+
+@keyframes brrr {
+    0%{transform: translate(0);}
+    20%{transform: translate(-3px);}
+    40%{transform: translate(6px);}
+    60%{transform: translate(-8px);}
+    80%{transform: translate(3px);}
+    100%{transform: translate(0);}
 }
